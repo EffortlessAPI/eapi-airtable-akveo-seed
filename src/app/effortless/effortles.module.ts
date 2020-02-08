@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { EffortlessRoutingModule } from './effortless-routing.module';
-import { NbMenuModule, NbCardModule, NbButtonModule, NbActionsModule, NbSelectModule, NbInputModule, NbTabsetModule, NbIconModule, NbSpinnerModule, NbToggleModule, NbListModule } from '@nebular/theme';
+import { NbMenuModule, NbCardModule, NbButtonModule, NbActionsModule, NbSelectModule, NbInputModule, NbTabsetModule, NbIconModule, NbSpinnerModule, NbToggleModule, NbListModule, NbDialogModule } from '@nebular/theme';
 import { ThemeModule } from '../@theme/theme.module';
 import { EffortlessComponent } from './effortless.component';
 import { FormsModule } from '@angular/forms';
@@ -30,12 +30,14 @@ DerivedDataDeclarations.derivedDeclarations.forEach(feDeclaration => declaration
     NbListModule,
     NbSpinnerModule,
     ThemeModule,
-      NbMenuModule,
-      FormsModule,
-      Ng5SliderModule,
-      NbSelectModule,
-      NbInputModule,
-  ]
+    NbMenuModule,
+    FormsModule,
+    Ng5SliderModule,
+    NbSelectModule,
+    NbInputModule,
+    NbDialogModule.forChild()
+  ],
+  entryComponents: DerivedDataDeclarations.derivedEntryComponents
 })
 export class EffortlessModule {
 
